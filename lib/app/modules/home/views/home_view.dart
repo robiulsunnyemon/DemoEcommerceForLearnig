@@ -1,5 +1,6 @@
 import 'package:dhakashop/app/data/models/product_model.dart';
 import 'package:dhakashop/app/data/models/review_model.dart';
+import 'package:dhakashop/app/modules/login/controllers/login_controller.dart';
 import 'package:dhakashop/app/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -8,11 +9,18 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetView<HomeController> {
   HomeView({super.key});
 
+
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('HomeView'),
         centerTitle: true,
+        actions: [
+          IconButton(onPressed: (){
+
+          },icon: Icon(Icons.logout_outlined),)
+        ],
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -4,4 +4,6 @@ class ApiUrls{
   static const productsUrl="$_baseUrl/products";
   static const categoryUrl="$_baseUrl/categories";
   static const categoryProductUrl="$_baseUrl/products/?category=";
+  static const loginUrl="$_baseUrl/auth/login/";
+  static const signupUrl="$_baseUrl/auth/signup/";
 }
